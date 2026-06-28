@@ -53,7 +53,7 @@ const Navbar = () => {
         {/* Member Portal & Admin buttons */}
         <div style={{ display: 'flex', gap: '0.75rem', marginLeft: '1rem' }}>
           <Link to="/register" className="btn btn-primary" style={{ padding: '0.5rem 1.25rem', fontSize: '0.95rem' }}>Member Register</Link>
-          <Link to="/admin" className="btn" style={{ padding: '0.5rem 1rem', fontSize: '0.95rem', backgroundColor: '#e53e3e', color: 'white' }}>Super Admin</Link>
+          {/* <Link to="/admin" className="btn" style={{ padding: '0.5rem 1rem', fontSize: '0.95rem', backgroundColor: '#e53e3e', color: 'white' }}>Super Admin</Link> */}
         </div>
       </div>
     </nav>
