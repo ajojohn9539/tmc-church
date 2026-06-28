@@ -31,7 +31,7 @@ const SuperAdmin = () => {
   const handleApprove = (user) => {
     const updated = users.map(u => u.id === user.id ? { ...u, status: 'Approved' } : u);
     saveUsers(updated);
-    
+
     // Show automated email alert notification
     setNotification({
       type: 'success',
@@ -80,12 +80,12 @@ const SuperAdmin = () => {
       <header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', backgroundColor: '#1a202c', color: '#fff', padding: '1.25rem 2rem', borderRadius: '12px', marginBottom: '2rem', boxShadow: '0 10px 20px rgba(0,0,0,0.15)' }}>
         <div>
           <h1 style={{ fontSize: '1.8rem', fontWeight: '800', color: '#63b3ed' }}>TMC Church Super Admin Control Center</h1>
-          <p style={{ fontSize: '0.95rem', color: '#a0aec0', marginTop: '0.25rem' }}>Dubai Mar Thoma Parish Member Verification & Approval Management</p>
+          <p style={{ fontSize: '0.95rem', color: '#a0aec0', marginTop: '0.25rem' }}>Thabor Mar Thoma Church Pandithitta Member Verification & Approval Management</p>
         </div>
         <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
-          <button 
-            onClick={() => setShowAddModal(true)} 
-            className="btn" 
+          <button
+            onClick={() => setShowAddModal(true)}
+            className="btn"
             style={{ backgroundColor: '#319795', color: '#fff', fontWeight: '700', padding: '0.65rem 1.25rem' }}
           >
             + Add New Member
@@ -98,14 +98,14 @@ const SuperAdmin = () => {
 
       {/* Notification Banner */}
       {notification && (
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
-          style={{ 
-            backgroundColor: notification.type === 'success' ? '#c6f6d5' : '#e2e8f0', 
+          style={{
+            backgroundColor: notification.type === 'success' ? '#c6f6d5' : '#e2e8f0',
             color: notification.type === 'success' ? '#22543d' : '#2d3748',
-            padding: '1rem 1.5rem', 
-            borderRadius: '8px', 
+            padding: '1rem 1.5rem',
+            borderRadius: '8px',
             marginBottom: '1.5rem',
             fontWeight: '600',
             boxShadow: '0 4px 6px rgba(0,0,0,0.05)',
@@ -135,7 +135,7 @@ const SuperAdmin = () => {
       {/* Main Users Table */}
       <div style={{ background: '#fff', borderRadius: '12px', padding: '2rem', boxShadow: '0 10px 25px rgba(0,0,0,0.05)' }}>
         <h3 style={{ fontSize: '1.4rem', fontWeight: '700', color: '#1a202c', marginBottom: '1.5rem' }}>Registered Member Applications</h3>
-        
+
         <div style={{ overflowX: 'auto' }}>
           <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left' }}>
             <thead>
@@ -164,9 +164,9 @@ const SuperAdmin = () => {
                     <td style={{ padding: '1.25rem 1rem', color: '#4a5568' }}>{user.areaPrayer}</td>
                     <td style={{ padding: '1.25rem 1rem', color: '#718096', fontSize: '0.9rem' }}>{user.registeredAt}</td>
                     <td style={{ padding: '1.25rem 1rem' }}>
-                      <span style={{ 
-                        padding: '0.35rem 0.85rem', 
-                        borderRadius: '999px', 
+                      <span style={{
+                        padding: '0.35rem 0.85rem',
+                        borderRadius: '999px',
                         backgroundColor: user.status === 'Approved' ? '#c6f6d5' : '#feebc8',
                         color: user.status === 'Approved' ? '#22543d' : '#9c4221',
                         fontSize: '0.85rem',
@@ -212,38 +212,38 @@ const SuperAdmin = () => {
             <form onSubmit={handleAddUser}>
               <div style={{ marginBottom: '1rem' }}>
                 <label style={{ display: 'block', fontWeight: '600', marginBottom: '0.4rem' }}>Full Name</label>
-                <input 
-                  type="text" 
-                  required 
-                  value={newUser.name} 
-                  onChange={e => setNewUser({ ...newUser, name: e.target.value })} 
-                  style={{ width: '100%', padding: '0.75rem', borderRadius: '6px', border: '1px solid #cbd5e0' }} 
+                <input
+                  type="text"
+                  required
+                  value={newUser.name}
+                  onChange={e => setNewUser({ ...newUser, name: e.target.value })}
+                  style={{ width: '100%', padding: '0.75rem', borderRadius: '6px', border: '1px solid #cbd5e0' }}
                 />
               </div>
               <div style={{ marginBottom: '1rem' }}>
                 <label style={{ display: 'block', fontWeight: '600', marginBottom: '0.4rem' }}>Email Address</label>
-                <input 
-                  type="email" 
-                  required 
-                  value={newUser.email} 
-                  onChange={e => setNewUser({ ...newUser, email: e.target.value })} 
-                  style={{ width: '100%', padding: '0.75rem', borderRadius: '6px', border: '1px solid #cbd5e0' }} 
+                <input
+                  type="email"
+                  required
+                  value={newUser.email}
+                  onChange={e => setNewUser({ ...newUser, email: e.target.value })}
+                  style={{ width: '100%', padding: '0.75rem', borderRadius: '6px', border: '1px solid #cbd5e0' }}
                 />
               </div>
               <div style={{ marginBottom: '1rem' }}>
                 <label style={{ display: 'block', fontWeight: '600', marginBottom: '0.4rem' }}>Mobile Phone</label>
-                <input 
-                  type="tel" 
-                  required 
-                  value={newUser.phone} 
-                  onChange={e => setNewUser({ ...newUser, phone: e.target.value })} 
-                  style={{ width: '100%', padding: '0.75rem', borderRadius: '6px', border: '1px solid #cbd5e0' }} 
+                <input
+                  type="tel"
+                  required
+                  value={newUser.phone}
+                  onChange={e => setNewUser({ ...newUser, phone: e.target.value })}
+                  style={{ width: '100%', padding: '0.75rem', borderRadius: '6px', border: '1px solid #cbd5e0' }}
                 />
               </div>
               <div style={{ marginBottom: '1.5rem' }}>
                 <label style={{ display: 'block', fontWeight: '600', marginBottom: '0.4rem' }}>Area Prayer</label>
-                <select 
-                  value={newUser.areaPrayer} 
+                <select
+                  value={newUser.areaPrayer}
                   onChange={e => setNewUser({ ...newUser, areaPrayer: e.target.value })}
                   style={{ width: '100%', padding: '0.75rem', borderRadius: '6px', border: '1px solid #cbd5e0' }}
                 >

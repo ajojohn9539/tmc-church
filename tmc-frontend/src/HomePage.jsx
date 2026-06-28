@@ -21,10 +21,10 @@ const HomePage = () => {
             Welcome to
           </span>
           <h1 style={{ fontSize: '3.8rem', fontWeight: '800', lineHeight: '1.15', marginBottom: '1.5rem' }}>
-            The Thabor Mar Thoma Church
+            Thabor Mar Thoma Church Pandithitta
           </h1>
           <p style={{ fontSize: '1.35rem', opacity: '0.9', maxWidth: '750px', margin: '0 auto 2.5rem auto', lineHeight: '1.6' }}>
-            Standing as a proud testament to the Lord's abounding favour in Dubai for over 50 years. A place of worship, spiritual growth, and Christian fellowship.
+            Standing as a proud testament to the Lord's abounding favour in Thalavoor for over 82 years. A place of worship, spiritual growth, and Christian fellowship.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <Link to="/register" className="btn btn-primary" style={{ padding: '1rem 2.25rem', fontSize: '1.15rem', fontWeight: '700' }}>
@@ -42,13 +42,15 @@ const HomePage = () => {
         <div style={{ maxWidth: '1100px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '4rem', alignItems: 'center' }}>
           <div>
             <h2 style={{ fontSize: '2.5rem', color: '#1a202c', fontWeight: '800', marginBottom: '1.5rem', lineHeight: '1.2' }}>
-              Our Graceful Beginning in Dubai
+              Our Graceful Beginning in Thalavoor
             </h2>
             <p style={{ color: '#4a5568', fontSize: '1.1rem', lineHeight: '1.8', marginBottom: '1.25rem' }}>
-              The Dubai Mar Thoma Church in Jebel Ali stands as a proud testament to the Lord's abounding favour on those who sought His name in a foreign land. As rapid development in Dubai progressed in the 1960s, believers from Kerala came together for fellowship and prayer.
+              Thabor Mar Thoma Church, Pandithitta, situated in the serene village of Thalavoor, stands as a testimony to God's abundant grace and faithfulness through generations. Established in 1936, the parish began with the unwavering faith and dedication of just eight families who came together for worship, prayer, and Christian fellowship.</p>
+            <p style={{ color: '#4a5568', fontSize: '1.1rem', lineHeight: '1.8', marginBottom: '2rem' }}>
+              The first General Body Meeting of the parish was held on 10th November 1936, marking a significant milestone in its formal establishment. Later, the members felt the need for a more permanent place of worship and, through prayers and God's guidance, acquired land. By His grace, the foundation stone of the first church building was laid on 12th May 1961.
             </p>
             <p style={{ color: '#4a5568', fontSize: '1.1rem', lineHeight: '1.8', marginBottom: '2rem' }}>
-              A total of 130 eager Marthomites gathered in 1969 and framed the rules to stand together as a parish. Today, by His grace, our vibrant church community continues to glorify God in the UAE.
+              The church building was successfully constructed and consecrated on 13th June 1965. Since then, by His grace, our vibrant church community continues to glorify God in Thalavoor.
             </p>
             <Link to="/officials" style={{ color: '#2b6cb0', fontWeight: '700', textDecoration: 'none', fontSize: '1.1rem' }}>
               Meet Our Vicars & Office Bearers &rarr;
@@ -143,7 +145,7 @@ const HomePage = () => {
         <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '3rem', marginBottom: '3rem' }}>
           <div>
             <h3 style={{ fontSize: '1.5rem', color: '#63b3ed', fontWeight: '800', marginBottom: '1rem' }}>Thabor Mar Thoma Church Pandithitta</h3>
-            <p style={{ color: '#a0aec0', lineHeight: '1.6' }}>Serving the Mar Thoma Christian community in Dubai and the UAE with faith, love, and spiritual commitment.</p>
+            <p style={{ color: '#a0aec0', lineHeight: '1.6' }}>Serving the Mar Thoma Christian community of Pandithitta and Thalavoor with faith, worship, fellowship, and dedicated service since 1944.</p>
           </div>
           <div>
             <h4 style={{ fontSize: '1.1rem', fontWeight: '700', marginBottom: '1rem', color: '#e2e8f0' }}>Quick Contact</h4>
@@ -154,11 +156,12 @@ const HomePage = () => {
           <div>
             <h4 style={{ fontSize: '1.1rem', fontWeight: '700', marginBottom: '1rem', color: '#e2e8f0' }}>Portals</h4>
             <Link to="/register" style={{ display: 'block', color: '#63b3ed', textDecoration: 'none', margin: '0.5rem 0' }}>Member Registration Portal</Link>
-            <Link to="/admin" style={{ display: 'block', color: '#fc8181', textDecoration: 'none', margin: '0.5rem 0' }}>Super Admin Verification Area</Link>
+            {/* <Link to="/admin" style={{ display: 'block', color: '#fc8181', textDecoration: 'none', margin: '0.5rem 0' }}>Super Admin Verification Area</Link> */}
           </div>
         </div>
         <div style={{ textAlign: 'center', borderTop: '1px solid #2d3748', paddingTop: '2rem', color: '#718096', fontSize: '0.9rem' }}>
-          &copy; {new Date().getFullYear()} Dubai Mar Thoma Parish (marthomaparishdubai.org). All rights reserved.
+          &copy; {new Date().getFullYear()} Thabor Mar Thoma Church, Pandithitta. All Rights Reserved.
+          Designed & Developed by Ajo John
         </div>
       </footer>
     </div>

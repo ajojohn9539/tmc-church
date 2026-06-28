@@ -19,7 +19,7 @@ const OrganisationsPage = () => {
       <div style={{ padding: '4rem 5%', maxWidth: '1200px', margin: '0 auto' }}>
         <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
           <h1 style={{ fontSize: '2.8rem', color: '#1a202c', fontWeight: '800' }}>Parish Organisations</h1>
-          <p style={{ fontSize: '1.2rem', color: '#4a5568', marginTop: '0.5rem' }}>The heart of ministry, fellowship, and service in Dubai Mar Thoma Parish</p>
+          <p style={{ fontSize: '1.2rem', color: '#4a5568', marginTop: '0.5rem' }}>The heart of ministry, fellowship, and service in Thabor Mar Thoma Church Pandithitta</p>
         </div>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem' }}>

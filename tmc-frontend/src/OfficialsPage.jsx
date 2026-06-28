@@ -3,9 +3,9 @@ import Navbar from './Navbar';
 
 const OfficialsPage = () => {
   const clergy = [
-    { title: 'Vicar', name: 'Rev. Jijo Thankachan Mutheri', phone: '+971 50 552 1899', email: 'vicarmtpd@gmail.com' },
-    { title: 'Assistant Vicar', name: 'Rev. John Knox', phone: '+971 50 458 2187', email: 'asstvicar@marthomaparishdubai.org' },
-    { title: 'Youth Chaplain', name: 'Rev. Binoy Baby', phone: '+971 54 399 6633', email: 'youthchaplain@marthomaparishdubai.org' },
+    { title: 'Vicar', name: 'Rev. Saji Koshy', phone: '+971 50 552 1899', email: 'vicarmtpd@gmail.com' },
+    // { title: 'Assistant Vicar', name: 'Rev. John Knox', phone: '+971 50 458 2187', email: 'asstvicar@marthomaparishdubai.org' },
+    // { title: 'Youth Chaplain', name: 'Rev. Binoy Baby', phone: '+971 54 399 6633', email: 'youthchaplain@marthomaparishdubai.org' },
   ];
 
   const officeBearers = [
@@ -21,7 +21,7 @@ const OfficialsPage = () => {
     <div style={{ backgroundColor: '#f7fafc', minHeight: '100vh' }}>
       <Navbar />
       <div style={{ padding: '4rem 5%', maxWidth: '1200px', margin: '0 auto' }}>
-        
+
         {/* Clergy Section */}
         <div style={{ marginBottom: '4rem' }}>
           <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
